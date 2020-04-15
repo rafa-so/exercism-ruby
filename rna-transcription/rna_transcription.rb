@@ -4,7 +4,7 @@ class Complement
   def self.of_dna(string_dna)
     return "" if string_dna.empty?
 
-    string_dna.upcase.chars.map do |dna|
+    string_dna.chars.map do |dna|
       TRANSCRIPTION[dna.to_sym]
     end.join
   end
